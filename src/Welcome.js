@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Button } from 'react-bootstrap';
+import history from './history';
+// import "./Welcome.css";
 
 function Welcome() {
     return (
@@ -35,8 +38,11 @@ function Welcome() {
                 <div className="col-5"> </div>
                 <div className="col-2" >
                     <div className="btn-group-vertical pull-right">
-                        <button type="button" className=" text-center button button--ujarak button--border-medium button--text-upper button--size-s button--inverted button--text-thick button--round-s">
-                            <a  href="#" role="button">enter</a>
+                        <button type="button" variant="btn btn-success"
+                                className=" text-center button button--ujarak button--border-medium button--text-upper button--size-s button--inverted button--text-thick button--round-s"
+                                // onClick={() => history.push('/Home')}>Home
+                            >
+                            <a  href="/Home" role="button">enter</a>
                         </button>
                     </div>
 
