@@ -11,8 +11,6 @@ import Contact from "./Contact/Contact";
 
 class App extends React.Component{
     render() {
-
-
         return (
             <Router history={history}>
                 <Route exact path="/" component={Welcome}/>
@@ -20,13 +18,7 @@ class App extends React.Component{
                 <Route path="/About" component={About}/>
                 <Route path="/Contact" component={Contact}/>
             </Router>
-
-
-        // <div className="App">
-        //     {/*<Welcome/>*/}
-        //
-        // </div>
-    );
+        );
     }
 }
 
